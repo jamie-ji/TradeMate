@@ -10,6 +10,11 @@
       "StackName": "amplify-trademate-dev-e81ba",
       "StackId": "arn:aws:cloudformation:ap-southeast-2:911071992187:stack/amplify-trademate-dev-e81ba/0ba72200-4fcc-11ef-b26f-0aad5d91c0ad",
       "AmplifyAppId": "d3hvkyaw43fz1x"
+    },
+    "categories": {
+      "auth": {
+        "trademate012299fb": {}
+      }
     }
   }
 }
