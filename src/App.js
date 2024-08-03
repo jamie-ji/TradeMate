@@ -15,7 +15,8 @@ import awsExports from './aws-exports';
 
 // Imports the Quiz component from Quiz.js for use in this file.
 import Quiz from './Quiz';
-import ActionCard from './ui-components/ActionCard';
+import NavBarHeader2 from './ui-components/NavBarHeader2';
+import HeroLayout1 from './ui-components/HeroLayout1';
 
 // Configures the Amplify library with the settings from aws-exports.js, which includes all the AWS service configurations for this project.
 Amplify.configure(awsExports);
@@ -23,7 +24,8 @@ Amplify.configure(awsExports);
 function App() {
   return (
     <div className="App">
-      <ActionCard></ActionCard>
+      <NavBarHeader2 width={"100%"}></NavBarHeader2>
+      <HeroLayout1 />
     </div>
   );
 }
