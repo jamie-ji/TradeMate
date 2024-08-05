@@ -7,7 +7,6 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "./utils";
-import LogoWithText from "./LogoWithText";
 import { Flex, Image, Text } from "@aws-amplify/ui-react";
 import MyIcon from "./MyIcon";
 export default function NavBarHeader(props) {
@@ -27,9 +26,9 @@ export default function NavBarHeader(props) {
       {...getOverrideProps(overrides, "NavBarHeader")}
       {...rest}
     >
-      <LogoWithText
-        width="127.88px"
-        height="18.91px"
+      <Image
+        width="219px"
+        height="70px"
         display="block"
         gap="unset"
         alignItems="unset"
@@ -37,9 +36,12 @@ export default function NavBarHeader(props) {
         shrink="0"
         position="relative"
         padding="0px 0px 0px 0px"
-        color="brand"
-        {...getOverrideProps(overrides, "LogoWithText")}
-      ></LogoWithText>
+        objectFit="cover"
+        {...getOverrideProps(
+          overrides,
+          "Snipaste_2024-08-05_20-58-39-removebg-preview 1"
+        )}
+      ></Image>
       <Flex
         gap="40px"
         direction="row"
@@ -54,27 +56,6 @@ export default function NavBarHeader(props) {
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "Frame 32129767076")}
       >
-        <Text
-          fontFamily="Inter"
-          fontSize="16px"
-          fontWeight="400"
-          color="rgba(92,102,112,1)"
-          lineHeight="24px"
-          textAlign="left"
-          display="block"
-          direction="column"
-          justifyContent="unset"
-          width="unset"
-          height="unset"
-          gap="unset"
-          alignItems="unset"
-          shrink="0"
-          position="relative"
-          padding="0px 0px 0px 0px"
-          whiteSpace="pre-wrap"
-          children="Dashboard"
-          {...getOverrideProps(overrides, "Dashboard")}
-        ></Text>
         <Text
           fontFamily="Inter"
           fontSize="16px"

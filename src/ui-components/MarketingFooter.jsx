@@ -7,8 +7,14 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "./utils";
-import { Button, Divider, Flex, Text, TextField } from "@aws-amplify/ui-react";
-import LogoWithText from "./LogoWithText";
+import {
+  Button,
+  Divider,
+  Flex,
+  Image,
+  Text,
+  TextField,
+} from "@aws-amplify/ui-react";
 export default function MarketingFooter(props) {
   const { overrides, ...rest } = props;
   return (
@@ -520,9 +526,9 @@ export default function MarketingFooter(props) {
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "Frame 433")}
       >
-        <LogoWithText
-          width="127.88px"
-          height="18.91px"
+        <Image
+          width="219px"
+          height="70px"
           display="block"
           gap="unset"
           alignItems="unset"
@@ -530,9 +536,12 @@ export default function MarketingFooter(props) {
           shrink="0"
           position="relative"
           padding="0px 0px 0px 0px"
-          color="neutral"
-          {...getOverrideProps(overrides, "LogoWithText")}
-        ></LogoWithText>
+          objectFit="cover"
+          {...getOverrideProps(
+            overrides,
+            "Snipaste_2024-08-05_20-58-39-removebg-preview 1"
+          )}
+        ></Image>
         <Text
           fontFamily="Inter"
           fontSize="16px"
