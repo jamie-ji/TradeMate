@@ -7,7 +7,7 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "./utils";
-import { Button, Flex, Image, Rating, Text } from "@aws-amplify/ui-react";
+import { Button, Flex, Image, Text } from "@aws-amplify/ui-react";
 export default function ActionCard(props) {
   const { overrides, ...rest } = props;
   return (
@@ -110,13 +110,6 @@ export default function ActionCard(props) {
             {...getOverrideProps(overrides, "Information about this product")}
           ></Text>
         </Flex>
-        <Rating
-          width="174px"
-          height="unset"
-          shrink="0"
-          size="default"
-          {...getOverrideProps(overrides, "Rating")}
-        ></Rating>
         <Text
           fontFamily="Inter"
           fontSize="20px"
@@ -147,7 +140,7 @@ export default function ActionCard(props) {
           size="large"
           isDisabled={false}
           variation="primary"
-          children="Button"
+          children="Add  to cart"
           {...getOverrideProps(overrides, "Button")}
         ></Button>
       </Flex>

@@ -11,7 +11,7 @@ import LogoWithText from "./LogoWithText";
 import { Flex, Image, Text } from "@aws-amplify/ui-react";
 import MyIcon from "./MyIcon";
 export default function NavBarHeader(props) {
-  const { NavBarLogo, overrides, ...rest } = props;
+  const { overrides, ...rest } = props;
   return (
     <Flex
       gap="40px"
