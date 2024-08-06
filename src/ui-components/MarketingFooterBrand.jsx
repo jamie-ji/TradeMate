@@ -24,7 +24,7 @@ export default function MarketingFooterBrand(props) {
       {...getOverrideProps(overrides, "MarketingFooterBrand")}
       {...rest}
     >
-      <Flex
+      {/* <Flex
         gap="16px"
         direction="row"
         width="unset"
@@ -36,8 +36,8 @@ export default function MarketingFooterBrand(props) {
         position="relative"
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "Frame 313")}
-      >
-        <Flex
+      > */}
+        {/* <Flex
           gap="10px"
           direction="column"
           width="unset"
@@ -48,8 +48,8 @@ export default function MarketingFooterBrand(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           {...getOverrideProps(overrides, "Frame 434")}
-        >
-          <Text
+        > */}
+          {/* <Text
             fontFamily="Inter"
             fontSize="20px"
             fontWeight="600"
@@ -69,8 +69,8 @@ export default function MarketingFooterBrand(props) {
             whiteSpace="pre-wrap"
             children="Sign up for our newsletter"
             {...getOverrideProps(overrides, "Sign up for our newsletter")}
-          ></Text>
-          <Text
+          ></Text> */}
+          {/* <Text
             fontFamily="Inter"
             fontSize="16px"
             fontWeight="400"
@@ -90,9 +90,9 @@ export default function MarketingFooterBrand(props) {
             whiteSpace="pre-wrap"
             children="No spam. We promise."
             {...getOverrideProps(overrides, "No spam. We promise.")}
-          ></Text>
-        </Flex>
-        <Flex
+          ></Text> */}
+        {/* </Flex> */}
+        {/* <Flex
           gap="10px"
           direction="row"
           width="unset"
@@ -103,8 +103,8 @@ export default function MarketingFooterBrand(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           {...getOverrideProps(overrides, "Frame 435")}
-        >
-          <TextField
+        > */}
+          {/* <TextField
             width="300px"
             height="unset"
             placeholder="Your email"
@@ -124,9 +124,9 @@ export default function MarketingFooterBrand(props) {
             variation="primary"
             children="Subscribe"
             {...getOverrideProps(overrides, "Button")}
-          ></Button>
-        </Flex>
-      </Flex>
+          ></Button> */}
+        {/* </Flex>
+      </Flex> */}
       <Flex
         gap="24px"
         direction="row"
