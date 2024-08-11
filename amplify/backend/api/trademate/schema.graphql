@@ -1,0 +1,9 @@
+type Goods @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  Name: String
+  ListedDate: AWSDate
+  Price: Float
+  Location: String
+  Contact: String
+  Holder: String
+}

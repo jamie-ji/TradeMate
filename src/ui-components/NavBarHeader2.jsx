@@ -8,7 +8,6 @@
 import * as React from "react";
 import { getOverrideProps } from "./utils";
 import { Button, Flex, Image, Text } from "@aws-amplify/ui-react";
-import MyIcon from "./MyIcon";
 export default function NavBarHeader2(props) {
   const { overrides, ...rest } = props;
   return (
@@ -38,19 +37,7 @@ export default function NavBarHeader2(props) {
         position="relative"
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "Frame 5")}
-      > 
-      <Flex 
-        direction="row"
-        {...getOverrideProps(overrides, "Frame 7")}
       >
-      <MyIcon 
-      type="more_horiz"
-      display={{base:"block",medium:"none"}}
-      alignSelf="center"
-      minWidth="24px"
-      minHeight="24px"
-      {...getOverrideProps(overrides, "Icon")}
-      ></MyIcon>
         <Image
           width="219px"
           height="70px"
@@ -64,9 +51,9 @@ export default function NavBarHeader2(props) {
           objectFit="cover"
           {...getOverrideProps(
             overrides,
-            "logo"
+            "Snipaste_2024-08-05_20-58-39-removebg-preview 2"
           )}
-        ></Image></Flex>
+        ></Image>
         <Text
           fontFamily="Inter"
           fontSize="16px"
@@ -164,19 +151,6 @@ export default function NavBarHeader2(props) {
           {...getOverrideProps(overrides, "Button39493467")}
         ></Button>
       </Flex>
-      {overrides?.MobileMenu && (
-      <Flex
-        {...getOverrideProps(overrides, "MobileMenu")}
-      >
-        <Text children="Products"{...getOverrideProps(overrides, "Products_click")} />
-        <Text children="Pricing"{...getOverrideProps(overrides, "Pricing_click")} />
-        <Text children="Contact"{...getOverrideProps(overrides, "Contact_click")} />
-        <Button children="Log in"{...getOverrideProps(overrides, "Button39493466_click")} />
-        <Button children="Sign up"{...getOverrideProps(overrides, "Button39493467_click")} />
-      </Flex>
-    )}
     </Flex>
-    
   );
-  
 }

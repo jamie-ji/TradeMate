@@ -8,16 +8,22 @@ function CustomHeroSection(props) {
   const overrideProps={
     NavBarHeroSection: {
         width: "100vw",
+        height: "90vh",
         style: {
-            backgroundImage: "url('/herosection_bg.png')",
-            backgroundSize: '130% auto',  // 这会使图片覆盖整个元素
+            backgroundImage: "url('/bg3.jpg')",
+            backgroundSize: 'cover',  // 这会使图片覆盖整个元素
             backgroundPosition: 'center',  // 这会使图片居中
             backgroundRepeat: 'no-repeat'  // 这会防止图片重复
             
           }
       },
+    "Hero Image": {
+      backgroundColor: "rgba(255,255,255,0.3)",
+      height: "100%",
+    },
     NavBarHeader2: {
         as: CustomNavBar,
+
       },
   };
 

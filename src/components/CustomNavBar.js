@@ -10,10 +10,15 @@ function CustomNavBar(props) {
 
   const overrideProps={
     "NavBarHeader2":{
-      width: "100vw",
+      width: "90vw",
+      height:"20vh",
       direction:{base:"column",medium:"row"},
       overflow:"visible",
-    },
+      style:{
+        background:" rgba(255,255,255,0.2)",
+        background:"transparent"
+      }
+      },
     "Frame 5":{
       gap:{base:"medium",large:tokens.space.xxl},
       direction:{base:"column",small:"row"},
@@ -31,9 +36,15 @@ function CustomNavBar(props) {
     "Products_click":{},
     "Pricing_click":{},
     "Contact_click":{},
-    "logo": {
-    src: "/logo.png",
-    alt: "Your Logo Alt Text",
+    "Snipaste_2024-08-05_20-58-39-removebg-preview 2": {
+      src: "/logo_bright_removebg.png",
+      alt: "LOGO",
+      maxWidth: {base:"300px",medium:"200px",large:"300px"}, /* Original width */
+      width: "100%", /* Full width of its container */
+      height: "auto", /* Maintain aspect ratio */
+      aspectRatio: "300 / 75", /* Maintain original aspect ratio */
+      maxHeight: "75px", /* Original height */
+    
     },
     "Products":{
       display:{base:"none",medium:"block"},
