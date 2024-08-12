@@ -10,54 +10,44 @@ function CustomNavBar(props) {
 
   const overrideProps={
     "NavBarHeader2":{
-      width: "90vw",
-      height:"20vh",
-      direction:{base:"column",medium:"row"},
+      width: {base:"fit-content",small:"80vw"},
+      position: "absolute",
+      direction:{base:"column",medium:"column",large:"row"},
       overflow:"visible",
-      style:{
-        background:" rgba(255,255,255,0.2)",
-        background:"transparent"
-      }
+      top:"3vh",
+      left:"10vw",
+      height:{base:"fit-content",medium:"fit-content",large:"10vh"},
+      borderRadius: "30px",
       },
     "Frame 5":{
+      width: {base:"fit-content",medium:"fit-content"},
       gap:{base:"medium",large:tokens.space.xxl},
       direction:{base:"column",small:"row"},
 
     },
-   "Icon": {
-      onClick: () => setIsMenuOpen(!isMenuOpen),
+    "Frame 437":{
+      minWidth:"245px",
+      gap: {base:"medium",medium:"xxl"},
+      padding: {base:"10px",medium:"10px"},
     },
-    // 添加一个新的 Flex 组件来包含移动端菜单项
-    "MobileMenu": {
-      display: { base: isMenuOpen ? "flex" : "none", medium: "none" },
-      direction: "column",
-      position: "relative",
+    
+    MyIcon:{
+      display:"none"
     },
     "Products_click":{},
     "Pricing_click":{},
     "Contact_click":{},
-    "Snipaste_2024-08-05_20-58-39-removebg-preview 2": {
-      src: "/logo_bright_removebg.png",
+    "logo": {
+      src: "/logo_red_removebg.png",
       alt: "LOGO",
-      maxWidth: {base:"300px",medium:"200px",large:"300px"}, /* Original width */
-      width: "100%", /* Full width of its container */
+      display: {base:"block",medium:"block"},
+      maxWidth: {base:"130px",medium:"200px",large:"250px"}, /* Original width */
+      width: {base:"100%"}, /* Full width of its container */
       height: "auto", /* Maintain aspect ratio */
       aspectRatio: "300 / 75", /* Maintain original aspect ratio */
       maxHeight: "75px", /* Original height */
     
     },
-    "Products":{
-      display:{base:"none",medium:"block"},
-    },
-    "Pricing":{
-      display:{base:"none",medium:"block"},
-    },
-    "Contact":{
-      display:{base:"none",medium:"block"},
-    },
-    actions:{
-      display:{base:"none",medium:"block"},
-    }
   }
   return (
     <>
