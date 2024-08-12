@@ -15,6 +15,7 @@ import '@aws-amplify/ui-react/styles.css';
 
 import CustomHeroSection from './components/CustomHeroSection';
 import CustomMarketingFooterBrand from './components/CustomMarketingFooterBrand';
+import CustomGoodsSection from './components/CustomGoodsSection';
 
 // Configures the Amplify library with the settings from aws-exports.js, which includes all the AWS service configurations for this project.
 Amplify.configure(awsExports);
@@ -27,7 +28,9 @@ function App() {
       <main>
       <CustomHeroSection />      
       </main>
-      
+      <CustomGoodsSection />
+
+
     <CustomMarketingFooterBrand></CustomMarketingFooterBrand>
     </div>
   );

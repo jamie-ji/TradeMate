@@ -6,4 +6,4 @@ type Goods @model @auth(rules: [{allow: public}]) {
   Location: String
   Contact: String
   Holder: String
-}
+} 
